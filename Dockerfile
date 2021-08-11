@@ -19,5 +19,7 @@ RUN set -eux; \
 ENV DIR /usr/src/official-images
 ENV BASHBREW_LIBRARY $DIR/library
 
+EXPOSE 80
+
 WORKDIR $DIR
 COPY . $DIR
